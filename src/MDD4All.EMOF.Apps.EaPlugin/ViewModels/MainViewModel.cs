@@ -32,6 +32,8 @@ namespace MDD4All.EMOF.Apps.EaPlugin.ViewModels
                                                                                       Repository.GetTreeSelectedPackage());
 
                 generator.ConvertEmofToMetamodel();
+
+                MessageBox.Show("Data model generation finished.");
             }
         }
     }
