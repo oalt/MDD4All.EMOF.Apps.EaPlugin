@@ -1,5 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.Input;
 using MDD4All.EnterpriseArchitect.ModelGeneration;
+using System;
+using System.Diagnostics;
 using System.Windows.Forms;
 using System.Windows.Input;
 
@@ -7,7 +9,8 @@ namespace MDD4All.EMOF.Apps.EaPlugin.ViewModels
 {
     public class MainViewModel
     {
-        public MainViewModel() {
+        public MainViewModel()
+        {
             InitializeCommands();
         }
 
@@ -27,13 +30,20 @@ namespace MDD4All.EMOF.Apps.EaPlugin.ViewModels
 
             if (dialogResult == DialogResult.OK)
             {
-                MetamodelFromEmofGenerator generator = new MetamodelFromEmofGenerator(Repository,
-                                                                                      openFileDialog.FileName,
-                                                                                      Repository.GetTreeSelectedPackage());
+                try
+                {
+                    MetamodelFromEmofGenerator generator = new MetamodelFromEmofGenerator(Repository,
+                                                                                          openFileDialog.FileName,
+                                                                                          Repository.GetTreeSelectedPackage());
 
-                generator.ConvertEmofToMetamodel();
+                    generator.ConvertEmofToMetamodel();
 
-                MessageBox.Show("Data model generation finished.");
+                    MessageBox.Show("Data model generation finished.");
+                }
+                catch (Exception exception)
+                {
+                    Debug.WriteLine(exception);
+                }
             }
         }
     }
