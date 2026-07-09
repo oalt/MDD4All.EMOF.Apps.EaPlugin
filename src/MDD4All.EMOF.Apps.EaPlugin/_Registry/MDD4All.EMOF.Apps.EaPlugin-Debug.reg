@@ -1,0 +1,57 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\Classes\MDD4All.EMOF.Apps.EaPlugin.EmofAddin]
+@="MDD4All.EMOF.Apps.EaPlugin.EmofAddin"
+
+[HKEY_CURRENT_USER\Software\Classes\MDD4All.EMOF.Apps.EaPlugin.EmofAddin\CLSID]
+@="{DE47A006-4CC0-3B4E-8704-34E6D6D6F6D2}"
+
+[HKEY_CURRENT_USER\Software\Classes\WOW6432Node\CLSID\{DE47A006-4CC0-3B4E-8704-34E6D6D6F6D2}]
+@="MDD4All.EMOF.Apps.EaPlugin.EmofAddin"
+
+[HKEY_CURRENT_USER\Software\Classes\WOW6432Node\CLSID\{DE47A006-4CC0-3B4E-8704-34E6D6D6F6D2}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="MDD4All.EMOF.Apps.EaPlugin.EmofAddin"
+"Assembly"="MDD4All.EMOF.Apps.EaPlugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=dfd4bdb117292732"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///C:/work/MDD4All.QVT.Transformations-dev_clean/src/MDD4All.EMOF.Apps.EaPlugin/src/MDD4All.EMOF.Apps.EaPlugin/bin/Debug/MDD4All.EMOF.Apps.EaPlugin.dll"
+
+[HKEY_CURRENT_USER\Software\Classes\WOW6432Node\CLSID\{DE47A006-4CC0-3B4E-8704-34E6D6D6F6D2}\InprocServer32\1.0.0.0]
+"Class"="MDD4All.EMOF.Apps.EaPlugin.EmofAddin"
+"Assembly"="MDD4All.EMOF.Apps.EaPlugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=dfd4bdb117292732"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///C:/work/MDD4All.QVT.Transformations-dev_clean/src/MDD4All.EMOF.Apps.EaPlugin/src/MDD4All.EMOF.Apps.EaPlugin/bin/Debug/MDD4All.EMOF.Apps.EaPlugin.dll"
+
+[HKEY_CURRENT_USER\Software\Classes\WOW6432Node\CLSID\{DE47A006-4CC0-3B4E-8704-34E6D6D6F6D2}\ProgId]
+@="MDD4All.EMOF.Apps.EaPlugin.EmofAddin"
+
+[HKEY_CURRENT_USER\Software\Classes\WOW6432Node\CLSID\{DE47A006-4CC0-3B4E-8704-34E6D6D6F6D2}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+
+[HKEY_CURRENT_USER\Software\Classes\MDD4All.EMOF.Apps.EaPlugin.ViewModels.MainViewModel]
+@="MDD4All.EMOF.Apps.EaPlugin.ViewModels.MainViewModel"
+
+[HKEY_CURRENT_USER\Software\Classes\MDD4All.EMOF.Apps.EaPlugin.ViewModels.MainViewModel\CLSID]
+@="{4A5DEC87-5D10-3FE8-B554-ED3D3C1BF978}"
+
+[HKEY_CURRENT_USER\Software\Classes\WOW6432Node\CLSID\{4A5DEC87-5D10-3FE8-B554-ED3D3C1BF978}]
+@="MDD4All.EMOF.Apps.EaPlugin.ViewModels.MainViewModel"
+
+[HKEY_CURRENT_USER\Software\Classes\WOW6432Node\CLSID\{4A5DEC87-5D10-3FE8-B554-ED3D3C1BF978}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="MDD4All.EMOF.Apps.EaPlugin.ViewModels.MainViewModel"
+"Assembly"="MDD4All.EMOF.Apps.EaPlugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=dfd4bdb117292732"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///C:/work/MDD4All.QVT.Transformations-dev_clean/src/MDD4All.EMOF.Apps.EaPlugin/src/MDD4All.EMOF.Apps.EaPlugin/bin/Debug/MDD4All.EMOF.Apps.EaPlugin.dll"
+
+[HKEY_CURRENT_USER\Software\Classes\WOW6432Node\CLSID\{4A5DEC87-5D10-3FE8-B554-ED3D3C1BF978}\InprocServer32\1.0.0.0]
+"Class"="MDD4All.EMOF.Apps.EaPlugin.ViewModels.MainViewModel"
+"Assembly"="MDD4All.EMOF.Apps.EaPlugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=dfd4bdb117292732"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///C:/work/MDD4All.QVT.Transformations-dev_clean/src/MDD4All.EMOF.Apps.EaPlugin/src/MDD4All.EMOF.Apps.EaPlugin/bin/Debug/MDD4All.EMOF.Apps.EaPlugin.dll"
+
+[HKEY_CURRENT_USER\Software\Classes\WOW6432Node\CLSID\{4A5DEC87-5D10-3FE8-B554-ED3D3C1BF978}\ProgId]
+@="MDD4All.EMOF.Apps.EaPlugin.ViewModels.MainViewModel"
+
+[HKEY_CURRENT_USER\Software\Classes\WOW6432Node\CLSID\{4A5DEC87-5D10-3FE8-B554-ED3D3C1BF978}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]

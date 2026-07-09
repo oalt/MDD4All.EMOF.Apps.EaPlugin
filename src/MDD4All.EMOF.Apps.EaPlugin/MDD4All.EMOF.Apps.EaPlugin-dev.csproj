@@ -109,8 +109,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="_Registry\MDD4All.EMOF.Apps.EaPlugin-Debug.reg" />
     <None Include="MDD4All_Github.snk" />
     <None Include="packages.config" />
+    <None Include="_Registry\RegisterAddin.reg" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\MDD4All.DataModeling.Attributes\src\MDD4All.DataModeling.Attributes\MDD4All.DataModeling.Attributes-dev.csproj">
