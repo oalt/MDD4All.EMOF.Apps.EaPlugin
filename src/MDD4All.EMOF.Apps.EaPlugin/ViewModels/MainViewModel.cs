@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.Input;
+using MDD4All.EMOF.Apps.EaPlugin.Views;
 using MDD4All.EnterpriseArchitect.ModelGeneration;
 using System;
 using System.Diagnostics;
@@ -17,11 +18,17 @@ namespace MDD4All.EMOF.Apps.EaPlugin.ViewModels
         private void InitializeCommands()
         {
             GenerateMetamodelFromEmofCommand = new RelayCommand(ExecuteGenerateMetamodelFromEMOF);
+            ShowWebViewFormCommand = new RelayCommand(ExecuteShowWebWiewForm);
+            ShowAboutDialogCommand = new RelayCommand(ExecuteShowAboutDialog);
         }
 
         public EA.Repository Repository { get; set; }
 
         public ICommand GenerateMetamodelFromEmofCommand { get; private set; }
+
+        public ICommand ShowWebViewFormCommand { get; private set; }
+
+        public ICommand ShowAboutDialogCommand { get; private set; }
 
         private void ExecuteGenerateMetamodelFromEMOF()
         {
@@ -45,6 +52,18 @@ namespace MDD4All.EMOF.Apps.EaPlugin.ViewModels
                     Debug.WriteLine(exception);
                 }
             }
+        }
+
+        private void ExecuteShowAboutDialog()
+        {
+            AboutDialog aboutDialog = new AboutDialog();
+            aboutDialog.ShowDialog();
+        }
+
+        private void ExecuteShowWebWiewForm()
+        {
+            WebWiewForm webWiewForm = new WebWiewForm();
+            webWiewForm.ShowDialog();
         }
     }
 }

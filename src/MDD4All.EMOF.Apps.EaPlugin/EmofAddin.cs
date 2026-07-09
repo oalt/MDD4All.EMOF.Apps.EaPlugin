@@ -8,6 +8,8 @@ namespace MDD4All.EMOF.Apps.EaPlugin
     {
         private const string MAIN_MENUNAME = "EMOF Plugin";
         private const string MENU_GENERATE_METAMODEL_FROM_EMOF_JSON = "Generate Metamodel from EMOF";
+        private const string MENU_SHOW_WEB_VIEW_FORM = "Show Web Wiev Form";
+        private const string MENU_ABOUT = "About...";
 
         private MainViewModel MainViewModel { get; set; }
 
@@ -28,7 +30,9 @@ namespace MDD4All.EMOF.Apps.EaPlugin
 
                 case "-&" + MAIN_MENUNAME:
                     string[] menuItems = { 
-                                            MENU_GENERATE_METAMODEL_FROM_EMOF_JSON
+                                            MENU_GENERATE_METAMODEL_FROM_EMOF_JSON,
+                                            //MENU_SHOW_WEB_VIEW_FORM
+                                            MENU_ABOUT
                                          };
                     return menuItems;
             }
@@ -73,6 +77,14 @@ namespace MDD4All.EMOF.Apps.EaPlugin
                 {
                     case MENU_GENERATE_METAMODEL_FROM_EMOF_JSON:
                         MainViewModel.GenerateMetamodelFromEmofCommand.Execute(null);
+                        break;
+
+                    case MENU_SHOW_WEB_VIEW_FORM:
+                        MainViewModel.ShowWebViewFormCommand.Execute(null);
+                        break;
+
+                    case MENU_ABOUT:
+                        MainViewModel.ShowAboutDialogCommand.Execute(null);
                         break;
                 }
             }
