@@ -11,32 +11,43 @@ namespace MDD4All.EMOF.Apps.EaPlugin
         private const string MENU_SHOW_WEB_VIEW_FORM = "Show Web Wiev Form";
         private const string MENU_ABOUT = "About...";
 
-        private MainViewModel MainViewModel { get; set; }
+        private MainViewModel MainViewModel { get; set; } = new MainViewModel();
 
         public void EA_FileOpen(EA.Repository repository)
         {
-            MainViewModel = new MainViewModel
-            {
-                Repository = repository
-            };
+            MainViewModel.Repository = repository;
         }
 
         public object EA_GetMenuItems(EA.Repository repository, string location, string menuName)
         {
+            object result = "";
             switch (menuName)
             {
                 case "":
-                    return "-&" + MAIN_MENUNAME;
+                    result = "-&" + MAIN_MENUNAME;
+                    break;
 
                 case "-&" + MAIN_MENUNAME:
-                    string[] menuItems = { 
-                                            MENU_GENERATE_METAMODEL_FROM_EMOF_JSON,
+                    string[] mainMenuItems = {
                                             //MENU_SHOW_WEB_VIEW_FORM
                                             MENU_ABOUT
                                          };
-                    return menuItems;
+
+                    string[] treeMenuItems = {
+                                            MENU_GENERATE_METAMODEL_FROM_EMOF_JSON
+                                         };
+
+                    if (location == "MainMenu")
+                    {
+                        result = mainMenuItems;
+                    }
+                    else if (location == "TreeView")
+                    {
+                        result = treeMenuItems;
+                    }
+                    break;
             }
-            return "";
+            return result;
         }
 
         bool IsProjectOpen(EA.Repository repository)
@@ -56,16 +67,7 @@ namespace MDD4All.EMOF.Apps.EaPlugin
                                     string menuName, string itemName,
                                     ref bool isEnabled, ref bool isChecked)
         {
-            if (IsProjectOpen(repository))
-            {
-                isEnabled = true;
-            }
-            else
-            {
-
-                isEnabled = false;
-            }
-
+            isEnabled = true;
         }
 
 
