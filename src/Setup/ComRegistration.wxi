@@ -35,7 +35,7 @@
                      Value="MDD4All.EMOF.Apps.EaPlugin.EmofAddin" />
       <RegistryValue Name="Assembly"
                      Type="string"
-                     Value="MDD4All.EMOF.Apps.EaPlugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=dfd4bdb117292732" />
+                     Value="MDD4All.EMOF.Apps.EaPlugin, Version=$(var.ProductVersion), Culture=neutral, PublicKeyToken=dfd4bdb117292732" />
       <RegistryValue Name="RuntimeVersion"
                      Type="string"
                      Value="v4.0.30319" />
@@ -51,7 +51,7 @@
                      Value="MDD4All.EMOF.Apps.EaPlugin.EmofAddin" />
       <RegistryValue Name="Assembly"
                      Type="string"
-                     Value="MDD4All.EMOF.Apps.EaPlugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=dfd4bdb117292732" />
+                     Value="MDD4All.EMOF.Apps.EaPlugin, Version=$(var.ProductVersion), Culture=neutral, PublicKeyToken=dfd4bdb117292732" />
       <RegistryValue Name="RuntimeVersion"
                      Type="string"
                      Value="v4.0.30319" />
@@ -100,7 +100,7 @@
                      Value="MDD4All.EMOF.Apps.EaPlugin.ViewModels.MainViewModel" />
       <RegistryValue Name="Assembly"
                      Type="string"
-                     Value="MDD4All.EMOF.Apps.EaPlugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=dfd4bdb117292732" />
+                     Value="MDD4All.EMOF.Apps.EaPlugin, Version=$(var.ProductVersion), Culture=neutral, PublicKeyToken=dfd4bdb117292732" />
       <RegistryValue Name="RuntimeVersion"
                      Type="string"
                      Value="v4.0.30319" />
@@ -116,7 +116,7 @@
                      Value="MDD4All.EMOF.Apps.EaPlugin.ViewModels.MainViewModel" />
       <RegistryValue Name="Assembly"
                      Type="string"
-                     Value="MDD4All.EMOF.Apps.EaPlugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=dfd4bdb117292732" />
+                     Value="MDD4All.EMOF.Apps.EaPlugin, Version=$(var.ProductVersion), Culture=neutral, PublicKeyToken=dfd4bdb117292732" />
       <RegistryValue Name="RuntimeVersion"
                      Type="string"
                      Value="v4.0.30319" />
