@@ -11,6 +11,7 @@
       UpgradeCode="{F3EE2814-137F-4AEF-ADB9-8B20E03062D8}">
 
     <MajorUpgrade DowngradeErrorMessage="Eine neuere Version des EMOF Plugins ist bereits installiert." />
+    <Media Id="1" Cabinet="EmofPlugin.cab" EmbedCab="yes" />
 
     <StandardDirectory Id="CommonAppDataFolder">
       <Directory Id="MDD4AllFolder" Name="MDD4All">
