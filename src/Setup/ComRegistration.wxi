@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Include xmlns="http://wixtoolset.org/schemas/v4/wxs">
+
+  <Component Id="Cmp_EmofPluginRegistry" Guid="{3F4C4359-F7EB-47DA-ABB7-31B0E947A765}">
+
+    <!-- ProgId: EmofAddin -->
+    <RegistryKey Root="HKCU"
+                 Key="Software\Classes\MDD4All.EMOF.Apps.EaPlugin.EmofAddin">
+      <RegistryValue Type="string"
+                     Value="MDD4All.EMOF.Apps.EaPlugin.EmofAddin"
+                     KeyPath="yes" />
+
+      <RegistryKey Key="CLSID">
+        <RegistryValue Type="string"
+                       Value="{DE47A006-4CC0-3B4E-8704-34E6D6D6F6D2}" />
+      </RegistryKey>
+    </RegistryKey>
+
+    <!-- CLSID: EmofAddin -->
+    <RegistryKey Root="HKCU"
+                 Key="Software\Classes\WOW6432Node\CLSID\{DE47A006-4CC0-3B4E-8704-34E6D6D6F6D2}">
+      <RegistryValue Type="string"
+                     Value="MDD4All.EMOF.Apps.EaPlugin.EmofAddin" />
+    </RegistryKey>
+
+    <RegistryKey Root="HKCU"
+                 Key="Software\Classes\WOW6432Node\CLSID\{DE47A006-4CC0-3B4E-8704-34E6D6D6F6D2}\InprocServer32">
+      <RegistryValue Type="string"
+                     Value="mscoree.dll" />
+      <RegistryValue Name="ThreadingModel"
+                     Type="string"
+                     Value="Both" />
+      <RegistryValue Name="Class"
+                     Type="string"
+                     Value="MDD4All.EMOF.Apps.EaPlugin.EmofAddin" />
+      <RegistryValue Name="Assembly"
+                     Type="string"
+                     Value="MDD4All.EMOF.Apps.EaPlugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=dfd4bdb117292732" />
+      <RegistryValue Name="RuntimeVersion"
+                     Type="string"
+                     Value="v4.0.30319" />
+      <RegistryValue Name="CodeBase"
+                     Type="string"
+                     Value="file:///c:/ProgramData/MDD4All/EmofPlugin/bin/MDD4All.EMOF.Apps.EaPlugin.dll" />
+    </RegistryKey>
+
+    <RegistryKey Root="HKCU"
+                 Key="Software\Classes\WOW6432Node\CLSID\{DE47A006-4CC0-3B4E-8704-34E6D6D6F6D2}\InprocServer32\1.0.0.0">
+      <RegistryValue Name="Class"
+                     Type="string"
+                     Value="MDD4All.EMOF.Apps.EaPlugin.EmofAddin" />
+      <RegistryValue Name="Assembly"
+                     Type="string"
+                     Value="MDD4All.EMOF.Apps.EaPlugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=dfd4bdb117292732" />
+      <RegistryValue Name="RuntimeVersion"
+                     Type="string"
+                     Value="v4.0.30319" />
+      <RegistryValue Name="CodeBase"
+                     Type="string"
+                     Value="file:///c:/ProgramData/MDD4All/EmofPlugin/bin/MDD4All.EMOF.Apps.EaPlugin.dll" />
+    </RegistryKey>
+
+    <RegistryKey Root="HKCU"
+                 Key="Software\Classes\WOW6432Node\CLSID\{DE47A006-4CC0-3B4E-8704-34E6D6D6F6D2}\ProgId">
+      <RegistryValue Type="string"
+                     Value="MDD4All.EMOF.Apps.EaPlugin.EmofAddin" />
+    </RegistryKey>
+
+    <RegistryKey Root="HKCU"
+                 Key="Software\Classes\WOW6432Node\CLSID\{DE47A006-4CC0-3B4E-8704-34E6D6D6F6D2}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}" />
+
+    <!-- ProgId: MainViewModel -->
+    <RegistryKey Root="HKCU"
+                 Key="Software\Classes\MDD4All.EMOF.Apps.EaPlugin.ViewModels.MainViewModel">
+      <RegistryValue Type="string"
+                     Value="MDD4All.EMOF.Apps.EaPlugin.ViewModels.MainViewModel" />
+
+      <RegistryKey Key="CLSID">
+        <RegistryValue Type="string"
+                       Value="{4A5DEC87-5D10-3FE8-B554-ED3D3C1BF978}" />
+      </RegistryKey>
+    </RegistryKey>
+
+    <!-- CLSID: MainViewModel -->
+    <RegistryKey Root="HKCU"
+                 Key="Software\Classes\WOW6432Node\CLSID\{4A5DEC87-5D10-3FE8-B554-ED3D3C1BF978}">
+      <RegistryValue Type="string"
+                     Value="MDD4All.EMOF.Apps.EaPlugin.ViewModels.MainViewModel" />
+    </RegistryKey>
+
+    <RegistryKey Root="HKCU"
+                 Key="Software\Classes\WOW6432Node\CLSID\{4A5DEC87-5D10-3FE8-B554-ED3D3C1BF978}\InprocServer32">
+      <RegistryValue Type="string"
+                     Value="mscoree.dll" />
+      <RegistryValue Name="ThreadingModel"
+                     Type="string"
+                     Value="Both" />
+      <RegistryValue Name="Class"
+                     Type="string"
+                     Value="MDD4All.EMOF.Apps.EaPlugin.ViewModels.MainViewModel" />
+      <RegistryValue Name="Assembly"
+                     Type="string"
+                     Value="MDD4All.EMOF.Apps.EaPlugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=dfd4bdb117292732" />
+      <RegistryValue Name="RuntimeVersion"
+                     Type="string"
+                     Value="v4.0.30319" />
+      <RegistryValue Name="CodeBase"
+                     Type="string"
+                     Value="file:///c:/ProgramData/MDD4All/EmofPlugin/bin/MDD4All.EMOF.Apps.EaPlugin.dll" />
+    </RegistryKey>
+
+    <RegistryKey Root="HKCU"
+                 Key="Software\Classes\WOW6432Node\CLSID\{4A5DEC87-5D10-3FE8-B554-ED3D3C1BF978}\InprocServer32\1.0.0.0">
+      <RegistryValue Name="Class"
+                     Type="string"
+                     Value="MDD4All.EMOF.Apps.EaPlugin.ViewModels.MainViewModel" />
+      <RegistryValue Name="Assembly"
+                     Type="string"
+                     Value="MDD4All.EMOF.Apps.EaPlugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=dfd4bdb117292732" />
+      <RegistryValue Name="RuntimeVersion"
+                     Type="string"
+                     Value="v4.0.30319" />
+      <RegistryValue Name="CodeBase"
+                     Type="string"
+                     Value="file:///c:/ProgramData/MDD4All/EmofPlugin/bin/MDD4All.EMOF.Apps.EaPlugin.dll" />
+    </RegistryKey>
+
+    <RegistryKey Root="HKCU"
+                 Key="Software\Classes\WOW6432Node\CLSID\{4A5DEC87-5D10-3FE8-B554-ED3D3C1BF978}\ProgId">
+      <RegistryValue Type="string"
+                     Value="MDD4All.EMOF.Apps.EaPlugin.ViewModels.MainViewModel" />
+    </RegistryKey>
+
+    <RegistryKey Root="HKCU"
+                 Key="Software\Classes\WOW6432Node\CLSID\{4A5DEC87-5D10-3FE8-B554-ED3D3C1BF978}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}" />
+
+  </Component>
+
+</Include>

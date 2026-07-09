@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?define ReleasePath = "..\MDD4All.EMOF.Apps.EaPlugin\bin\Release" ?>
+
+
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+
+  <Package Scope="perUser"
+      Name="EMOF Plugin for Enterprise Architect"
+      Manufacturer="MDD4All.de"
+      Version="$(var.ProductVersion)"
+      UpgradeCode="{F3EE2814-137F-4AEF-ADB9-8B20E03062D8}">
+
+    <MajorUpgrade DowngradeErrorMessage="Eine neuere Version des EMOF Plugins ist bereits installiert." />
+
+    <StandardDirectory Id="CommonAppDataFolder">
+      <Directory Id="MDD4AllFolder" Name="MDD4All">
+        <Directory Id="EMOFPLUGINFOLDER" Name="EmofPlugin">
+          <Directory Id="INSTALLDIR" Name="bin" />
+        </Directory>
+      </Directory>
+    </StandardDirectory>
+
+    <Feature Id="MainFeature" Title="EmofPluginSetup" Level="1">
+      <ComponentGroupRef Id="PluginFiles" />
+      <ComponentRef Id="Cmp_EmofPluginRegistry" />
+      <ComponentRef Id="RegisterAddin" />
+    </Feature>
+
+  </Package>
+
+  <Fragment>
+
+    <ComponentGroup Id="PluginFiles" Directory="INSTALLDIR">
+
+        <!-- Copy all binary files from Release directory -->
+        <Files Include="$(var.ReleasePath)\**">
+
+            <Exclude Files="$(var.ReleasePath)\**\*.pdb;$(var.ReleasePath)\**\*.xml;" />
+        </Files>
+
+        <!-- Register the Addin -->
+        <Component Id="RegisterAddin" Guid="2F5CD0B0-1EC8-4360-ABD4-BB7CF403B9AE">
+            <RegistryKey Root ="HKCU" Key ="Software\Sparx Systems\EAAddins\EmofPlugin">
+                <RegistryValue Value ="MDD4All.EMOF.Apps.EaPlugin.EmofAddin" Type ="string" />
+            </RegistryKey>
+        </Component>
+
+        <?include ComRegistration.wxi ?>
+
+    </ComponentGroup>
+
+
+    
+
+  
+  </Fragment>
+
+</Wix>
