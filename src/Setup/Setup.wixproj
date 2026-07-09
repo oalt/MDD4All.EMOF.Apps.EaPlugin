@@ -2,6 +2,7 @@
 
     <PropertyGroup>
         <ProductVersion Condition="'$(ProductVersion)' == ''">1.0.0.0</ProductVersion>
+        <SuppressIces>ICE24</SuppressIces>
     </PropertyGroup>
 
     <PropertyGroup>
